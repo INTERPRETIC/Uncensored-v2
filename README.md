@@ -13,7 +13,7 @@ Open-weight Qwen models with political censorship removed. Safety refusals and g
 | Qwen3.8-27B-Uncensored-v2 | 98 → 4 of 113 | 100 → 95 of 100 | GPQA Diamond 89.2 → 86.4 |
 | Qwen3.5-4B-Uncensored-v2 | 47 → 11 of 51 | 99 → 93 of 100 | MMLU 72.7 → 72.3 |
 
-Base model → Uncensored-v2 (BF16). Political censorship is measured on the 115 politically sensitive Chinese-language questions of Pan & Xu (2026). Questions the base model does not know are excluded: 2 for 27B, 64 for 4B. Harmful requests: AdvBench subset. Full methods and per-format numbers are on each model card.
+Base model → Uncensored-v2 (BF16). Political censorship is measured on the 115 politically sensitive Chinese-language questions of Pan & Xu (2026). Questions the base model does not know are excluded: 2 for 27B, 64 for 4B. Following the censorship audit of Yang et al. (2026), an LLM judge labels each response as censored or uncensored. Harmful requests: AdvBench subset. Full methods and per-format numbers are on each model card.
 
 ## Downloads
 
@@ -56,6 +56,8 @@ The political evaluation covers Chinese-language questions only. A substantive a
 
 [interpretic.ai](https://interpretic.ai) · [Hugging Face](https://huggingface.co/InterpreticAI) · [LM Studio Hub](https://lmstudio.ai/interpretic) · [X @INTERPRETIC](https://x.com/INTERPRETIC) · [Discord](https://discord.gg/DqS9kU8Qbw)
 
-## Reference
+## References
 
 Pan, J., & Xu, X. (2026). Political censorship in large language models originating from China. *PNAS Nexus*, 5(2), pgag013. https://doi.org/10.1093/pnasnexus/pgag013
+
+Yang, G., Liu, F., Wang, A., Hosseinmardi, H., & Ghasemian, A. (2026). How China-origin vision-language models move from refusal to reframing in state alignment. *arXiv preprint* arXiv:2608.11816. https://arxiv.org/abs/2608.11816
