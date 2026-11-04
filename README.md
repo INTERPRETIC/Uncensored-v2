@@ -61,3 +61,13 @@ The political evaluation covers Chinese-language questions only. A substantive a
 Pan, J., & Xu, X. (2026). Political censorship in large language models originating from China. *PNAS Nexus*, 5(2), pgag013. https://doi.org/10.1093/pnasnexus/pgag013
 
 Yang, G., Liu, F., Wang, A., Hosseinmardi, H., & Ghasemian, A. (2026). How China-origin vision-language models move from refusal to reframing in state alignment. *arXiv preprint* arXiv:2608.11816. https://arxiv.org/abs/2608.11816
+
+## Citation
+
+```bibtex
+@misc{interpretic2026uncensoredv2,
+  title        = {Uncensored-v2: Open-Weight Qwen Models with Political Censorship Removed},
+  year         = {2026},
+  howpublished = {\url{https://github.com/INTERPRETIC/Uncensored-v2}}
+}
+```
