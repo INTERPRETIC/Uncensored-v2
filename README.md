@@ -33,6 +33,7 @@ Base model → Uncensored-v2 (BF16). Political censorship is measured on the 115
 | [BF16](https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2) | 9.3 GB | vLLM, Transformers |
 | [GGUF Q4_K_M](https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2-GGUF) | 2.8 GB | llama.cpp, LM Studio |
 | [GGUF IQ3_XXS Browser](https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2-Browser-GGUF) | 1.9 GB | in-browser (WebGPU / WebAssembly), phones |
+| [Qwenputer BF16](https://huggingface.co/InterpreticAI/Qwenputer-4B-Uncensored-v2) | 18.7 GB | RISC-V CPU compiled into the weights ([Qwenputer](https://github.com/divagr18/qwenputer)); exact arithmetic 40/40 vs 29/40 · Qwenputer chat driver |
 
 ## Quick start
 
