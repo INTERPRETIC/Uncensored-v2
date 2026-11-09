@@ -4,16 +4,18 @@
 
 # Uncensored-v2
 
-Open-weight Qwen models with political censorship removed. Safety refusals and general capability stay close to the base model. Vision and thinking mode are kept. Apache 2.0.
+Open-weight Qwen models with political censorship removed. Vision and thinking mode are kept. Apache 2.0.
 
 ## Results
 
-| Model | Political censorship | Harmful requests refused | Capability |
-|---|---|---|---|
-| Qwen3.8-27B-Uncensored-v2 | 98 → 4 of 113 | 100 → 95 of 100 | GPQA Diamond 89.2 → 86.4 |
-| Qwen3.5-4B-Uncensored-v2 | 47 → 11 of 51 | 99 → 93 of 100 | MMLU 72.7 → 72.3 |
+Pan & Xu (2026) Chinese political battery, all 115 politically sensitive questions. Base model → Uncensored-v2 (BF16), same prompts, decoding and judge.
 
-Base model → Uncensored-v2 (BF16). Political censorship is measured on the 115 politically sensitive Chinese-language questions of Pan & Xu (2026). Questions the base model does not know are excluded: 2 for 27B, 64 for 4B. Following the censorship audit of Yang et al. (2026), an LLM judge labels each response as censored or uncensored. Harmful requests: AdvBench subset. Full methods and per-format numbers are on each model card.
+| Model | Censored answers (lower is better) |
+|---|---|
+| Qwen3.8-27B-Uncensored-v2 | 83.5% → **3.5%** |
+| Qwen3.5-4B-Uncensored-v2 | 90.4% → **20.9%** |
+
+Following the censorship audit of Yang et al. (2026), an LLM judge labels each response as censored or uncensored. Full methods and per-format numbers are on each model card.
 
 ## Downloads
 
@@ -33,7 +35,7 @@ Base model → Uncensored-v2 (BF16). Political censorship is measured on the 115
 | [BF16](https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2) | 9.3 GB | vLLM, Transformers |
 | [GGUF Q4_K_M](https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2-GGUF) | 2.8 GB | llama.cpp, LM Studio |
 | [GGUF IQ3_XXS Browser](https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2-Browser-GGUF) | 1.9 GB | in-browser (WebGPU / WebAssembly), phones |
-| [Qwenputer BF16](https://huggingface.co/InterpreticAI/Qwenputer-4B-Uncensored-v2) | 18.7 GB | RISC-V CPU compiled into the weights ([Qwenputer](https://github.com/divagr18/qwenputer)); exact arithmetic 40/40 vs 29/40 · Qwenputer chat driver |
+| [Qwenputer BF16](https://huggingface.co/InterpreticAI/Qwenputer-4B-Uncensored-v2) | 18.7 GB | RISC-V CPU compiled into the weights ([Qwenputer](https://github.com/divagr18/qwenputer)); exact arithmetic 100% vs 72.5% (higher is better) · Qwenputer chat driver |
 
 **Newer releases:** [Qwen3.8-27B-Uncensored-v3](https://github.com/INTERPRETIC/Qwen3.8-27B-Uncensored-v3) (built on Arete-27B) · [Qwen4-27B-Uncensored-v3](https://github.com/INTERPRETIC/Qwen4-27B-Uncensored-v3) (coming soon)
 
