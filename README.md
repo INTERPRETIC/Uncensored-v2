@@ -35,6 +35,8 @@ Base model → Uncensored-v2 (BF16). Political censorship is measured on the 115
 | [GGUF IQ3_XXS Browser](https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2-Browser-GGUF) | 1.9 GB | in-browser (WebGPU / WebAssembly), phones |
 | [Qwenputer BF16](https://huggingface.co/InterpreticAI/Qwenputer-4B-Uncensored-v2) | 18.7 GB | RISC-V CPU compiled into the weights ([Qwenputer](https://github.com/divagr18/qwenputer)); exact arithmetic 40/40 vs 29/40 · Qwenputer chat driver |
 
+**Newer releases:** [Qwen3.8-27B-Uncensored-v3](https://github.com/INTERPRETIC/Qwen3.8-27B-Uncensored-v3) (built on Arete-27B) · [Qwen4-27B-Uncensored-v3](https://github.com/INTERPRETIC/Qwen4-27B-Uncensored-v3) (coming soon)
+
 ## Quick start
 
 ```bash
@@ -67,6 +69,8 @@ Yang, G., Liu, F., Wang, A., Hosseinmardi, H., & Ghasemian, A. (2026). How China
 
 ```bibtex
 @misc{interpretic2026uncensoredv2,
+  author       = {Rain},
+  organization = {INTERPRETIC AI},
   title        = {Interpretic Uncensored-v2: Open-Weight Qwen Models with Political Censorship Removed},
   year         = {2026},
   howpublished = {\url{https://github.com/INTERPRETIC/Uncensored-v2}}
