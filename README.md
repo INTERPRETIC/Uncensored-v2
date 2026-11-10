@@ -71,7 +71,7 @@ Yang, G., Liu, F., Wang, A., Hosseinmardi, H., & Ghasemian, A. (2026). How China
 
 ```bibtex
 @misc{interpretic2026uncensoredv2,
-  author       = {Rain},
+  author       = {Young, Thomas},
   organization = {INTERPRETIC AI},
   title        = {Interpretic Uncensored-v2: Open-Weight Qwen Models with Political Censorship Removed},
   year         = {2026},
